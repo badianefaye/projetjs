@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	<title>Exercice des Boutons</title>
+	
+</head>	
+<body>
+				<fieldset>
+							<legend>EXERCICE DES BOUTTONS:</legend>
+
+
+							<center>		<div id="carre" style=" width:100px; height:100px;background-color: blue;"></div>
+								<br><br>
+
+										<input type="button" value="boutton1" onclick="taille();"><br><br>
+
+										 <input type="button" id="boutton2" value="boutton2" onclick="changerLaCouleur();"><br><br>
+  
+										 <input type="button" class="boutton3" value="boutton3" onclick="remetCouleurInitiale();"><br><br> 
+										<input type="button" class="btn" value="boutton4" onclick="Disparaitre();" ><br><br> 
+										<input type="button" class="btn" value="boutton5"onclick="réaparaitre();" ><br><br>
+								
+					<script>		
+								var carre=document.getElementById("carre");
+								var compteur=0;
+
+								
+								function taille(){
+									if (compteur==0) {
+										carre.style.height="110px";
+										compteur=1;
+									}
+									else if (compteur==1) {
+										carre.style.height='300px';
+										compteur=2;
+									}
+									else{
+										carre.style.height="100px";
+										compteur=0;
+									}
+								}
+
+								function changerLaCouleur(){
+								
+								
+
+								 carre.style.backgroundColor='green';
+						
+									}
+								
+								function remetCouleurInitiale(){
+
+									carre.style.backgroundColor='blue';
+
+									}
+									function Disparaitre (){
+									(carre.style.display = "none");}
+
+									function réaparaitre(){
+
+
+									(carre.style.display= "block");
+											}
+
+									
+
+
+							
+
+						</script>
+			</fieldset>
+</body>
+
+</html>

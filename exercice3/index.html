@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exerecice3 redimensionnement</title>
+<meta charset="utf-8">
+
+</head>
+<body>
+
+<center><fieldset><legend>Exercice3</legend> 
+	
+<div id="rectangle" style="height:100px; width:100px; background-color: blue;" onclick="augmenteTaille();"></div>
+
+	<script>
+		
+var rec=document.getElementById('rectangle');
+var compteur=0;
+function augmenteTaille()
+{
+	if(compteur==0)
+	{
+	 rec.style.height="200px";
+		
+		compteur=1;
+	}
+		else
+		{
+
+			rec.style.height="100px";
+
+		compteur=0;
+} 
+}
+
+	</script>
+
+
+</fieldset>
+</center>
+</body>
+</html>

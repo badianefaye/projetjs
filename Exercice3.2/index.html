@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice3.2 action</title>
+	<style type="text/css">
+		#carreBleu{
+		 margin:100px auto;
+		}
+	</style>
+</head>
+<body>
+
+<center><canvas id='carreBleu' style='width:100px;height:100px;background-color: blue;'></canvas></center>
+
+<script type="text/javascript">
+
+document.addEventListener('keyup', function(){
+	var carreBleu = document.getElementById('carreBleu');
+	var position = 100;
+	var id = setInterval(frame,5);
+
+	function frame(){
+		if(position == -200){
+			clearInterval(id);
+		}else{
+			position--;
+			carreBleu.style.margin = position + 'px';
+		}
+	}
+});	
+
+
+
+
+</script>
+
+</body>
+</html>

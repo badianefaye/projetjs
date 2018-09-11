@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice des Boutons</title>
+	
+</head>	
+<body>
+				<fieldset>
+							<legend>EXERCICE DES BOUTTONS:</legend>
+
+
+							<center>		<div id="carre" style=" width:100px; height:100px;background-color: blue;"></div>
+								<br><br>
+
+										<input type="button" value="boutton1" /><br><br>
+
+										 <input type="button" id="boutton2" value="boutton2" /><br><br>
+  
+										 <input type="button" class="btn" value="boutton3" /><br><br> 
+										<input type="button" class="btn" value="boutton4" /><br><br> 
+										<input type="button" class="btn" value="boutton5" /><br><br>
+								<span style='background-color: green' id="boutton2" onclick="changerLaCouleur"></span>
+					<script>		
+								var boutton2=document.getElementById("boutton2");
+
+								var rect=0;
+								function changerLaCouleur(){
+								if (rect==0)
+								{
+
+								 boutton2.style='background-color: green';
+
+								}else{
+									boutton2.style='background-color:blue'
+								}
+
+								}
+						
+
+						
+
+
+
+						</script>
+			</fieldset>
+</body>
+
+</html>
